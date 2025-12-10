@@ -9,7 +9,7 @@ This README provides **copy-pasteable code examples** to fetch and use a **rando
 
 ---
 
-[![Follow Developer](https://img.shields.io/github/followers/xhclintohn?label=Follow%20Me ;)&style=for-the-badge)](https://github.com/xhclintohn)
+[![Follow Me](https://img.shields.io/github/followers/xhclintohn?label=Follow%20Me&style=for-the-badge)](https://github.com/xhclintohn)
 
 ---
 
