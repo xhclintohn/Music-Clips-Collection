@@ -1,8 +1,9 @@
 # 🎵 Music Clips Collection
 
-A **professional, lightweight collection** of short music audio clips (≤ 30 seconds), stored in the `Audios/` folder and optimized for **easy fetching, streaming, and bot/app usage**.
+A **lightweight collection** of short music audio clips (≤ 30 seconds), stored in the `Audios/` folder and optimized for **easy fetching, streaming, and bot/app usage**.
 
-No APIs.  
+No APIs.
+Easy to use.  
 No filenames required.  
 Just fetch **random audio clips** directly from GitHub.
 
@@ -189,7 +190,7 @@ Created & maintained by
 
 ⭐ Support & Follow
 
-If this repo helps you, please ⭐ star it!
+If this repo helps you, please ⭐ star it! and follow me on GitHub 
 
 ---
 
