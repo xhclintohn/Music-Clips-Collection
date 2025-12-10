@@ -53,18 +53,18 @@ async function getRandomAudio() {
 
 // Preview
 getRandomAudio().then(console.log).catch(console.error);
+```
 
-✅ Copy-paste ready
-✅ No filenames used
-✅ Returns raw audio URL
-
+✅ Copy-paste ready  
+✅ No filenames used  
+✅ Returns raw audio URL  
 
 ---
 
-🟢 Example 2 — JavaScript (Browser)
+## 🟢 Example 2 — JavaScript (Browser)
+### Play a Random Audio Clip
 
-Play a Random Audio Clip
-
+```html
 <button onclick="playRandomAudio()">Play Random Audio</button>
 <audio id="audioPlayer" controls></audio>
 
@@ -82,18 +82,18 @@ async function playRandomAudio() {
   player.play();
 }
 </script>
+```
 
-✅ Perfect for websites
-✅ Lightweight streaming
-✅ User-friendly preview
-
+✅ Perfect for websites  
+✅ Lightweight streaming  
+✅ User-friendly preview  
 
 ---
 
-🟢 Example 3 — JavaScript (Bot / Backend)
+## 🟢 Example 3 — JavaScript (Bot / Backend)
+### Download a Random Audio File
 
-Download a Random Audio File
-
+```js
 import fs from "fs";
 import fetch from "node-fetch";
 
@@ -111,79 +111,71 @@ async function downloadRandomAudio() {
 }
 
 downloadRandomAudio();
+```
 
-✅ Useful for bots
-✅ Saves local file
-✅ Works with any audio format
-
+✅ Useful for bots  
+✅ Saves local file  
+✅ Works with any audio format  
 
 ---
 
-🟢 Example 4 — curl
+## 🟢 Example 4 — curl
+### Download a Random Audio (Terminal / Termux)
 
-Download a Random Audio (Terminal / Termux)
-
+```bash
 curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents/Audios?ref=main" \
 | jq -r '.[].download_url' \
 | shuf -n 1 \
 | xargs -I{} curl -L "{}" -o random-audio
+```
 
-✅ One-command usage
-✅ Great for automation
-✅ No hardcoded filenames
-
+✅ One-command usage  
+✅ Great for automation  
+✅ No hardcoded filenames  
 
 ---
 
-🟢 Example 5 — Print Random Audio URL Only
+## 🟢 Example 5 — Print Random Audio URL Only
 
+```bash
 curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents/Audios?ref=main" \
 | jq -r '.[].download_url' | shuf -n 1
+```
 
-✅ Useful for bots & scripts
-✅ Returns clean raw URL
-
+✅ Useful for bots & scripts  
+✅ Returns clean raw URL  
 
 ---
 
-🟢 Example 6 — Stream in Terminal (mpv)
+## 🟢 Example 6 — Stream in Terminal (mpv)
 
+```bash
 URL=$(curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents/Audios?ref=main" \
 | jq -r '.[].download_url' | shuf -n1)
 
 mpv "$URL"
+```
 
-✅ Instant preview
-✅ No download needed
-
+✅ Instant preview  
+✅ No download needed  
 
 ---
 
 💡 Use Cases
 
-Discord / WhatsApp bots
-
-Mobile & web apps
-
-Music previews
-
-Sound testing
-
-Lightweight streaming
-
-
+- Discord / WhatsApp bots
+- Mobile & web apps
+- Music previews
+- Sound testing
+- Lightweight streaming
 
 ---
 
 ⚠️ Notes
 
-GitHub API has rate limits (public use is usually enough).
-
-Only audio files should be inside the Audios/ folder.
-
-The system auto-supports new uploads — no code changes needed.
-
-
+- GitHub API has rate limits (public use is usually enough).
+- Only audio files should be inside the Audios/ folder.
+- The system auto-supports new uploads — no code changes needed.
 
 ---
 
@@ -193,15 +185,11 @@ Created & maintained by
 
 𝐱𝐡_𝐜𝐥𝐢𝐧𝐭𝐨𝐧
 
-
 ---
 
 ⭐ Support & Follow
 
-
-
 If this repo helps you, please ⭐ star it!
-
 
 ---
 
