@@ -1,11 +1,11 @@
-# 🎵 Music Clips Collection
+# Music/Song Clips Collection
 
 A **lightweight collection** of short music audio clips (≤ 30 seconds), stored in the `Audios/` folder and optimized for **easy fetching, streaming, and bot/app usage**.
 
 No APIs.
 Easy to use.  
 No filenames required.  
-Just fetch **random audio clips** directly from GitHub.
+Just fetch **random audio clips** directly from this repo :)
 
 ---
 
@@ -33,7 +33,7 @@ https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents/Audios?r
 
 ---
 
-## 🟢 Example 1 — JavaScript (Node.js)  
+## 🟩 Example 1 — JavaScript (Node.js)  
 ### Fetch a Random Audio URL
 
 ```js
@@ -43,7 +43,7 @@ async function getRandomAudio() {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch audio list");
+    throw new Error("Failed to fetch audio list🟥");
   }
 
   const files = await res.json();
@@ -62,7 +62,7 @@ getRandomAudio().then(console.log).catch(console.error);
 
 ---
 
-## 🟢 Example 2 — JavaScript (Browser)
+## 🟩 Example 2 — JavaScript (Browser)
 ### Play a Random Audio Clip
 
 ```html
@@ -91,7 +91,7 @@ async function playRandomAudio() {
 
 ---
 
-## 🟢 Example 3 — JavaScript (Bot / Backend)
+## 🟩 Example 3 — JavaScript (Bot / Backend)
 ### Download a Random Audio File
 
 ```js
@@ -120,7 +120,7 @@ downloadRandomAudio();
 
 ---
 
-## 🟢 Example 4 — curl
+## 🟩 Example 4 — curl
 ### Download a Random Audio (Terminal / Termux)
 
 ```bash
@@ -136,7 +136,7 @@ curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents
 
 ---
 
-## 🟢 Example 5 — Print Random Audio URL Only
+## 🟩 Example 5 — Print Random Audio URL Only
 
 ```bash
 curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents/Audios?ref=main" \
@@ -148,7 +148,7 @@ curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents
 
 ---
 
-## 🟢 Example 6 — Stream in Terminal (mpv)
+## 🟩 Example 6 — Stream in Terminal (mpv)
 
 ```bash
 URL=$(curl -s "https://api.github.com/repos/xhclintohn/Music-Clips-Collection/contents/Audios?ref=main" \
